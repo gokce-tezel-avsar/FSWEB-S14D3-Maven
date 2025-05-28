@@ -1,20 +1,20 @@
 package org.example.arge;
 
 public class GasPoweredCar extends CarSkeleton{
-   private double avgKMPerLitre;
+   private double avgKmPerLitre;
    private int cylinders;
 
-    public double getAvgKMPerLitre() {
-        return avgKMPerLitre;
+    public double getAvgKmPerLitre() {
+        return avgKmPerLitre;
     }
 
     public int getCylinders() {
         return cylinders;
     }
 
-    public GasPoweredCar(String name, String description, double avgKMPerLitre, int cylinders) {
+    public GasPoweredCar(String name, String description, double avgKmPerLitre, int cylinders) {
         super(name, description);
-        this.avgKMPerLitre = avgKMPerLitre;
+        this.avgKmPerLitre = avgKmPerLitre;
         this.cylinders = cylinders;
     }
 }

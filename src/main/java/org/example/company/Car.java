@@ -40,14 +40,21 @@ public class Car {
         return cylinders == car.cylinders && Objects.equals(name, car.name);
     }
 
-    public void startEngine(){
-        System.out.println("the"+ getClass().getSimpleName() +"'s engine is starting");
+    public String startEngine(){
+        String engineStart =  "the car's engine is starting";
+        System.out.println(getClass().getSimpleName());
+        return engineStart;
+
     }
-    public void accelerate(){
-        System.out.println("the "+ getClass().getSimpleName() +" is accelerating");
+    public String accelerate(){
+        String engineAccelerate =  "the car is accelerating";
+        System.out.println(getClass().getSimpleName());
+        return engineAccelerate;
     }
-    public void brake(){
-        System.out.println("the"+ getClass().getSimpleName() +"is braking" );
+    public String brake(){
+        String carBrake = "the car is braking";
+        System.out.println(getClass().getSimpleName());
+        return carBrake;
     }
 
 }
